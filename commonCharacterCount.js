@@ -1,5 +1,4 @@
 function commonCharacterCount(str1, str2){
-    let commonItems = []
     let count = {}
     let totalMatches = 0;
 
@@ -16,8 +15,8 @@ function commonCharacterCount(str1, str2){
     for(let i = 0; i < str2.length; i++){
         const current = str2[i]
         
-        if(count.hasOwnProperty(current)){
-            if(count.hasOwnProperty(current) < 2) {
+        if(count[current]){
+            if(count[current] === 1) {
                 delete count[current]
                 totalMatches++;
 
@@ -26,7 +25,6 @@ function commonCharacterCount(str1, str2){
                 totalMatches++
             }  
         }
-        console.log(count)   
     }
     return totalMatches;
 }
