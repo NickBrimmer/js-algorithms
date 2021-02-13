@@ -29,6 +29,8 @@ function reverseInParens(input){
         return (input.slice(0, input.indexOf('('))) +  ((input.slice(input.indexOf('(')+1, input.indexOf(')')).split('').reverse().join(''))) 
         + input.slice(input.indexOf(')')+1)
     }
+
+    return '';
     
 }
 
