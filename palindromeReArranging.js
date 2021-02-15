@@ -1,6 +1,6 @@
 function palindromeRearranging(input) {
-    const chars = input.split('')
     let object = {}
+    let count = 0;
 
     for (let i = 0; i < input.length; i++) {
         const current = input[i]
@@ -15,13 +15,13 @@ function palindromeRearranging(input) {
     console.log(object);
 
 
-    for (const keys in object) {
-        if ((object[keys] % 2 === 1) > 1) {
-            return false;
+    for (const item in object) {
+        if (object[item] % 2 === 1) {
+            count += 1
         }
     }
 
-    return true;
+    return count <= 1;
 }
 
 console.log(palindromeRearranging('aabbcd'));
