@@ -12,7 +12,7 @@ function arrayMaximalAdjacentDifference(inputArray) {
     return diff;
 }
 
-// console.log(arrayMaximalAdjacentDifference([2, 4, 1, 0]));
-// console.log(arrayMaximalAdjacentDifference([1, 1, 1, 1]));
-// console.log(arrayMaximalAdjacentDifference([-1, 4, 10, 3, -2]));
+console.log(arrayMaximalAdjacentDifference([2, 4, 1, 0]));
+console.log(arrayMaximalAdjacentDifference([1, 1, 1, 1]));
+console.log(arrayMaximalAdjacentDifference([-1, 4, 10, 3, -2]));
 console.log(arrayMaximalAdjacentDifference([10, 11, 13]));
