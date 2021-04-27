@@ -12,8 +12,6 @@ function jumps(flagHeight, bigJump) {
     }
 
     return count;
-
-
 }
 
 console.log(jumps(8, 3));
